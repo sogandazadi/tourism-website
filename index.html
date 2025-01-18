@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Ahvaz</title>
+    <link id="theme-style" rel="stylesheet" href="css/style.css">
+</head>
+<body class="homepage">
+    <div id="header"></div>
+
+    <main>
+        <section class="hero">        
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1>Welcome to Ahvaz</h1>
+                <p>Experience the beauty, culture, and history of Ahvaz like never before.</p>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+                <a href="attractions.html" class="btn explore-btn">Explore Now</a>
+                <button class="btn btn-outline" id="theme-toggle-btn">Toggle Theme</button>
+            </div>
+            <div class="scroll-down">
+                <a href="#about">Scroll Down</a>
+                <span class="arrow">▼</span>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Why Ahvaz?</h2><br/>
+                <p>Ahvaz is home to the Karun River, historic bridges, and vibrant culture. Its rich history and natural wonders make it a must-visit destination.</p>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>Top Attractions</h2>
+            <div class="attractions-list">
+                <div class="featured-item">
+                    <img src="./images/karun river.jpg" alt="Karun River">
+                    <h3>Karun River</h3>
+                    <p>Enjoy peaceful walks along the longest river in Iran.</p>
+                </div>
+
+                <div class="featured-item">
+                    <img src="./images/White Bridge.jpg" alt="White Bridge">
+                    <h3>White Bridge</h3>
+                    <p>An iconic bridge offering stunning river views.</p>
+                </div>
+
+                <div class="featured-item">
+                    <img src="./images/black bridge.webp" alt="Black Bridge">
+                    <h3>Black Bridge</h3>
+                    <p>A historic landmark and a symbol of the city’s past.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+    <script src="./js/theme.js" ></script>
+</body>
+</html>

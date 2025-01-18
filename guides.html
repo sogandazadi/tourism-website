@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Guides in Ahvaz</title>
+    <link id="theme-style" rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <main>
+        <section class="guides-list">
+            <h2>Meet Our Expert Guides</h2>
+            <div class="guide-card">
+                <img src="images/ali.jpg" alt="Ali Ahmadi" class="guide-img">
+                <div class="guide-info">
+                    <h3>Ali Avakh</h3>
+                    <p>10+ years of experience in guiding tourists across Ahvaz’s top attractions.</p>
+                    <a href="guide-details.html?id=1" class="btn">Check Availability</a>
+                </div>
+            </div>
+
+            <div class="guide-card">
+                <img src="images/sara.jpg" alt="Sara Mohammadi" class="guide-img">
+                <div class="guide-info">
+                    <h3>Sara Izadi</h3>
+                    <p>Specialist in cultural tours and local cuisines. Experience Ahvaz with a pro!</p>
+                    <a href="guide-details.html?id=2" class="btn">Check Availability</a>
+                </div>
+            </div>
+
+            <div class="guide-card">
+                <img src="images/babak.webp" alt="Reza Nikzad" class="guide-img">
+                <div class="guide-info">
+                    <h3>Babak Nikzad</h3>
+                    <p>Outdoor adventure and historical site expert. Let’s explore Ahvaz together!</p>
+                    <a href="guide-details.html?id=3" class="btn">Check Availability</a>
+                </div>
+            </div>
+
+            <div class="guide-card">
+                <img src="images/maryam.jpg" alt="Reza Nikzad" class="guide-img">
+                <div class="guide-info">
+                    <h3>Maryam Azimi</h3>
+                    <p>Adventure guide and history enthusiast. Let’s uncover the hidden gems of Ahvaz together!</p>
+                    <a href="guide-details.html?id=3" class="btn">Check Availability</a>
+                </div>
+            </div>
+
+            <div class="guide-card">
+                <img src="images/Anahita.jpg" alt="Reza Nikzad" class="guide-img">
+                <div class="guide-info">
+                    <h3>Anahita Alavi</h3>
+                    <p>Passionate about outdoor exploration and historical landmarks. Come explore Ahvaz with us!</p>
+                    <a href="guide-details.html?id=3" class="btn">Check Availability</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <div id="footer"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+        <script src="./js/theme.js" ></script>
+</body>
+</html>

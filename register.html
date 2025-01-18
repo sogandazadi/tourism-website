@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link id="theme-style" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section class="signup-form">
+            <h2>Sign Up</h2>
+            <form id="signupForm" action="submit-form.php" method="POST">
+                <!-- FName and LName Fields -->
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required placeholder="Enter your first name">
+                    <span class="error-message" id="first-name-error">First Name is required.</span>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required placeholder="Enter your last name">
+                    <span class="error-message" id="last-name-error">Last Name is required.</span>
+                </div>
+
+                <!-- Username -->
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter your username">
+                    <span class="error-message" id="username-error">Username is required.</span>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    <span class="error-message" id="email-error">Invalid email format.</span>
+                </div>
+
+                <!-- Mobile Number (Required) -->
+                <div class="form-group">
+                    <label for="mobile">Phone Number</label>
+                    <input type="tel" id="mobile" name="mobile" required placeholder="Enter your mobile number">
+                    <span class="error-message" id="mobile-error">Mobile number must start with 09 and be 11 digits long.</span>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                    <span class="error-message" id="password-error">Password must be at least 6 characters long.</span>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+                    <span class="error-message" id="confirm-password-error">Passwords must match.</span>
+                </div>
+
+                <!-- Optional Fields -->
+                <div class="form-group">
+                    <label for="address">Address (Optional)</label>
+                    <input type="text" id="address" name="address" placeholder="Enter your address">
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Date of Birth (Optional)</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="signup-btn">Sign Up</button>
+
+                <p id="success-message" style="display: none; color: green;">Your registration was successful!</p>
+            </form>
+    </main>
+
+    <div id="footer"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+    <script src="./js/register-validation.js"></script>
+    <script src="./js/theme.js" ></script>
+</body>
+</html>

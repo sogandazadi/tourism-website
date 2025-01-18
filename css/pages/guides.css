@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f5;
+}
+
+.guides-list {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.guides-list h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.guide-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-wrap: wrap; 
+}
+
+.guide-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.guide-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 25px;
+}
+
+.guide-info {
+    flex: 1;
+}
+
+.guide-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.guide-info p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: #7D8C93;
+    /* 4CAF50 */
+    /* 55696D */
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #333;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .guides-list {
+        padding: 20px;
+    }
+
+    .guide-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .guide-img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+
+    .guide-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .guide-info p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .guides-list h2 {
+        font-size: 1.8rem;
+    }
+
+    .guide-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .guide-info p {
+        font-size: 0.85rem;
+    }
+
+    .guide-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+}

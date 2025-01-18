@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Ahvaz Tourist Attractions</title>
+    <link id="theme-style" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+       <h1 class="event-h1">Upcoming Events in Ahvaz</h1><br/>
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <img src="./images/mohh.jpg" class="slide-img">
+            </div>
+            <div class="slides fade">
+                <img src="./images/artt.jpg" class="slide-img">
+            </div>
+            <div class="slides fade">
+                <img src="./images/erf.jpg" class="slide-img">
+            </div>
+        
+            <!-- فلش‌های بعدی و قبلی -->
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+        </div>
+
+        <section class="events-grid">
+
+            <div class="event-card">
+                <img src="./images/new art.jpg" alt="Exhibition">
+                <div class="card-content">
+                    <h3>Art Exhibition</h3>
+                    <p><strong>Date:</strong> January 15, 2025</p>
+                    <p><strong>Location:</strong> Ahvaz Museum of Art</p><br/>
+                    <button class="event-btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <img src="./images/new mohsen.jpg" alt="Concert">
+                <div class="card-content">
+                    <h3>Live Concert by Mohsen Sharifian</h3>
+                    <p><strong>Date:</strong> January 10, 2025</p>
+                    <p><strong>Location:</strong> Helal Cinema</p>
+                    <button class="event-btn">Buy Tickets</button>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <img src="./images/cir.jpg" alt="Circus">
+                <div class="card-content">
+                    <h3>Circus for Families</h3><br/>
+                    <p><strong>Date:</strong> January 12, 2025</p>
+                    <p><strong>Location:</strong> Foolad Arena</p>
+                    <button class="event-btn">Buy Tickets</button>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <img src="./images/foolad.jpg">
+                <div class="card-content">
+                    <h3>FC Foolad match</h3>
+                    <p><strong>Date:</strong> January 11, 2025</p>
+                    <p><strong>Location:</strong> Foolad Arena</p><br/>
+                    <button class="event-btn">Buy Tickets</button>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <img src="./images/erf.jpg" alt="Concert">
+                <div class="card-content">
+                    <h3>Live Concert by Erfun Tahmasbi</h3>
+                    <p><strong>Date:</strong> January 5, 2025</p>
+                    <p><strong>Location:</strong> Helal Cinema</p>
+                    <button class="event-btn">Buy Tickets</button>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <img src="./images/festival.jpg" alt="Festival">
+                <div class="card-content">
+                    <h3>Ahvaz Cultural Festival     </h3><br/>
+                    <p><strong>Date:</strong> January 20, 2025</p>
+                    <p><strong>Location:</strong> Saheli Park</p>
+                    <button class="event-btn">Join Us</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+    <script src="./js/slideshow.js" defer></script>
+    <script src="./js/theme.js" ></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #dcdcdc;
+}
+
+
+.guide-details {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1f2a33;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+.guide-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.guide-info .guide-detail-img {
+    margin-right: 30px;
+}
+
+.guide-info .guide-detail-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.guide-description {
+    flex: 1;
+}
+
+.guide-description h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.guide-description p {
+    font-size: 16px;
+    color: #d1d1d1;
+    line-height: 1.6;
+}
+
+.available-times {
+    margin-bottom: 30px;
+}
+
+.available-times h3 {
+    font-size: 22px;
+    color: #ffffff; 
+    margin-bottom: 15px;
+}
+
+.available-times ul {
+    list-style: none;
+    padding: 0;
+}
+
+.available-times li {
+    font-size: 16px;
+    color: #d1d1d1; 
+    margin-bottom: 8px;
+    border-left: 4px solid #4fc3f7; 
+    padding-left: 10px;
+}
+
+.reservation-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1a1a1a; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+}
+
+.reservation-form h3 {
+    font-size: 22px;
+    color: #ffffff; 
+    margin-bottom: 15px;
+}
+
+.reservation-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #d1d1d1; 
+}
+
+.reservation-form input, .reservation-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #4fc3f7; 
+    font-size: 16px;
+    background-color: #121212; 
+    color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.reservation-form input:focus, .reservation-form select:focus {
+    border-color: #29b6f6; 
+    outline: none;
+}
+
+.reservation-form .guide-reserve-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4fc3f7; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.reservation-form .guide-reserve-btn:hover {
+    background-color: #29b6f6; 
+}
+
+.filter {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter label {
+    font-size: 18px;
+    color: #ffffff; 
+    margin-right: 10px;
+}
+
+.filter select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #4fc3f7;
+    background-color: #121212; 
+    color: #ffffff; 
+    width: 200px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.filter select:focus {
+    border-color: #29b6f6;
+}

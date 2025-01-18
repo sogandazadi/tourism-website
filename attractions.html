@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Attractions in Ahvaz</title>
+    <link id="theme-style" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section class="attractions-section">
+
+            <div class="attractions-list">
+                <h2 class="attractions-section-title">Explore Tourist Attractions in Ahvaz</h2>
+                <div class="attraction-card">
+                    <div class="attraction-info">
+                        <h3>Karun River</h3>
+                        <p>The Karun River is the longest river in Iran and flows through the city of Ahvaz. It's a beautiful sight, and you can enjoy boat rides or a relaxing walk along the riverbanks.</p>
+                        <a href="https://www.google.com/maps?q=Karun+River,+Ahvaz" target="_blank" class="attractions-btn">View on Google Maps</a>
+                    </div>
+                    <div class="attraction-image" style="background-image: url('./images/karun river.jpg');"></div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-info">
+                        <h3>Jameh Mosque Ahvaz</h3>
+                        <p>The Jameh Mosque of Ahvaz is one of the city's oldest and most significant mosques, known for its beautiful Islamic architecture.</p>
+                        <a href="https://www.google.com/maps?q=Jameh+Mosque,+Ahvaz" target="_blank" class="attractions-btn">View on Google Maps</a>
+                    </div>
+                    <div class="attraction-image" style="background-image: url('./images/mosque.jpg');"></div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-info">
+                        <h3>Grave of Ali Ibn Mahziar</h3>
+                        <p>The tomb of Ali Ibn Mahziar, an important Islamic figure in the region, is located in Ahvaz. This site holds religious and historical significance.</p>
+                        <a href="https://www.google.com/maps?q=Grave+of+Ali+Ibn+Mahziar,+Ahvaz" target="_blank" class="attractions-btn">View on Google Maps</a>
+                    </div>
+                    <div class="attraction-image" style="background-image: url('./images/ali ibn.jpg');"></div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-info">
+                        <h3>Black Bridge</h3>
+                        <p>The Black Bridge is another significant bridge in Ahvaz, built in the 20th century. It's an important transportation link and a well-known spot for photography enthusiasts.</p>
+                        <a href="https://www.google.com/maps?q=Black+Bridge,+Ahvaz" target="_blank" class="attractions-btn">View on Google Maps</a>
+                    </div>
+                    <div class="attraction-image" style="background-image: url('./images/black bridge.webp');"></div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-info">
+                        <h3>Seventh Bridge</h3>
+                        <p>The Seventh Bridge of Ahvaz is another iconic bridge over the Karun River. It’s an important infrastructure that also offers stunning views of the river and city.</p>
+                        <a href="https://www.google.com/maps?q=Seventh+Bridge,+Ahvaz" target="_blank" class="attractions-btn">View on Google Maps</a>
+                    </div>
+                    <div class="attraction-image" style="background-image: url('./images/seventhh.jpg');"></div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-info">
+                        <h3>White Bridge</h3>
+                        <p>The White Bridge is one of the most iconic landmarks of Ahvaz. It crosses the Karun River and offers breathtaking views of the river and city.</p>
+                        <a href="https://www.google.com/maps?q=White+Bridge,+Ahvaz" target="_blank" class="attractions-btn">View on Google Maps</a>
+                    </div>
+                    <div class="attraction-image" style="background-image: url('./images/White Bridge.jpg');"></div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-info">
+                        <h3>Palms Ahvaz</h3>
+                        <p>Ahvaz is known for its vast palm groves. These palms are not only a symbol of the region but also provide a unique atmosphere for sightseeing and photography.</p>
+                        <a href="https://www.google.com/maps?q=Palms,+Ahvaz" target="_blank" class="attractions-btn">View on Google Maps</a>
+                    </div>
+                    <div class="attraction-image" style="background-image: url('./images/palms.jpg');"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+    <script src="./js/theme.js" ></script>
+</body>
+</html>

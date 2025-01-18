@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Ahvaz Tourist Attractions</title>
+    <link id="theme-style" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section class="faq-section">
+            <h1>Frequently Asked Questions (FAQ)</h1>
+
+            <div class="faq-item">
+                <button class="faq-question">What is the main feature of this website?</button>
+                <div class="faq-answer">
+                    <p>This website offers detailed information on tourist attractions in Ahvaz, including events, landmarks, and cultural sites.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How can I buy tickets for events?</button>
+                <div class="faq-answer">
+                    <p>You can buy tickets directly through the event pages on the website, where you will find a "Buy Tickets" button.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What makes this website better than other tourism sites?</button>
+                <div class="faq-answer">
+                    <p>Our website provides up-to-date information on Ahvaz's tourist attractions, including local events, with easy navigation and user-friendly design.</p>
+                </div>
+            </div>
+            <!-- You can add more FAQ items here -->
+        </section><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    </main>
+    
+    <div id="footer"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+    <script src="./js/faq.js"></script>
+    <script src="./js/theme.js" ></script>
+</body>
+</html>

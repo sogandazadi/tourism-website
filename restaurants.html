@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants & Cafes in Ahvaz</title>
+    <link id="theme-style" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="header"></div>
+    <main>
+        <section class="restaurants-section">
+            <h2>Top Restaurants & Cafes in Ahvaz</h2><br/>
+
+            <div class="restaurant-list">
+                <div class="restaurant-card">
+                    <img src="./images/reef.jpg" alt="Reef Restaurant">
+                    <div class="card-content">
+                        <h3>Reef Restaurant</h3>
+                        <p>Enjoy delicious seafood and international dishes with a beautiful view of the river.</p>
+                        <a href="https://www.google.com/maps?q=Reef+Restaurant,+Ahvaz" target="_blank" class="restaurant-btn">View on Google Maps</a>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="./images/retaj.jpg" alt="Retaj Restaurant">
+                    <div class="card-content">
+                        <h3>Retaj Restaurant</h3>
+                        <p>Serving exquisite Persian and Middle Eastern cuisine with a modern twist and flair.</p>
+                        <a href="https://www.google.com/maps?q=Retaj+Restaurant,+Ahvaz" target="_blank" class="restaurant-btn">View on Google Maps</a>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="./images/balist.jpg" alt="Balist Cafe">
+                    <div class="card-content">
+                        <h3>Balist Cafe</h3>
+                        <p>A cozy and peaceful cafe, perfect for enjoying a relaxing cup of coffee or tea.</p>
+                        <a href="https://maps.app.goo.gl/ZzKN5JyQSRr2e1wU6" target="_blank" class="restaurant-btn">View on Google Maps</a>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="./images/amalfi.jpeg" alt="Amalfi Cafe">
+                    <div class="card-content">
+                        <h3>Amalfi Cafe</h3>
+                        <p>A taste of Italy in Ahvaz, serving fresh coffee and authentic Italian pastries daily</p>
+                        <a href="https://www.google.com/maps?q=Amalfi+Cafe,+Ahvaz" target="_blank" class="restaurant-btn">View on Google Maps</a>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="./images/arka.jpeg" alt="Arka Cafe">
+                    <div class="card-content">
+                        <h3>Arka Takeaway</h3>
+                        <p>Chill atmosphere with a variety of beverages, offering great vibes for all ages.</p>
+                        <a href="https://maps.app.goo.gl/CYHYgHv2ojjjEKBy8" target="_blank" class="restaurant-btn">View on Google Maps</a>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="./images/babel.jpg" alt="Babel Restaurant">
+                    <div class="card-content">
+                        <h3>Babel Restaurant</h3>
+                        <p>Known for its authentic northern Persian dishes and a warm, inviting ambiance.</p>
+                        <a href="https://g.co/kgs/7KuNNtt" target="_blank" class="restaurant-btn">View on Google Maps</a>
+                    </div>
+                </div>
+
+                <div class="restaurant-card">
+                    <img src="./images/nader.webp" alt="Nader Cafe">
+                    <div class="card-content">
+                        <h3>Nader Cafe</h3>
+                        <p>A cozy cafe offering a variety of coffees and light bites in a charming setting.</p>
+                        <a href="https://maps.app.goo.gl/oGoECdhUN4qgxa6E7" target="_blank" class="restaurant-btn">View on Google Maps</a>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="./images/tetra.png" alt="Tetra FoodHall">
+                    <div class="card-content">
+                        <h3>Tetra FoodHall</h3>
+                        <p>A modern dining destination, offering a variety of international cuisines in style.</p>
+                        <a href=" https://maps.app.goo.gl/aEwpwGVrdxfdM9mz8" target="_blank" class="restaurant-btn">View on Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+    <script src="./js/theme.js" ></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
+@import url('./pages/events.css');
+@import url('./pages/attractions.css');
+@import url('./pages/guides.css');
+@import url('./pages/home.css');
+@import url('./pages/login-style.css');
+@import url('./pages/restaurants.css');
+@import url('./pages/signup.css');
+@import url('./pages/guide-detail.css');
+@import url('./pages/faq.style.css');

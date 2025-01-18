@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Ahvaz Tourist Attractions</title>
+    <link id="theme-style" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <section class="login-section">
+            <h2>Login</h2>
+            <form id="loginForm" action="#" method="post">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    <span class="error-message" id="username-error"></span> 
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <span class="error-message" id="password-error"></span> 
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="login-btn">Login</button>
+                </div>
+            </form>
+            <p class="signup-link">Don't have an account? <a href="register.html">Sign up here</a></p>
+        </section>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    </main>
+
+    <div id="footer"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+    <script src="./js/login-validation.js"></script>
+    <script src="./js/theme.js" ></script>
+</body>
+</html>
